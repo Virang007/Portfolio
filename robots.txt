@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://virang007.github.io/Portfolio/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific paths (if any)
+# Disallow: /private/

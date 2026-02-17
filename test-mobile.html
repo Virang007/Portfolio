@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #000;
+            color: #fff;
+        }
+
+        .test-box {
+            background: #FF8A00;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .desktop-only {
+            display: block;
+            background: #00ff00;
+        }
+
+        .mobile-only {
+            display: none;
+            background: #ff0000;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+
+            .mobile-only {
+                display: block;
+            }
+
+            .test-box {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>RESPONSIVE TEST PAGE</h1>
+
+    <div class="test-box desktop-only">
+        ✅ DESKTOP VIEW - If you see this GREEN box, you're on DESKTOP mode
+    </div>
+
+    <div class="test-box mobile-only">
+        ✅ MOBILE VIEW - If you see this RED box, responsive CSS IS WORKING!
+    </div>
+
+    <div class="test-box">
+        <h2>How to Test Mobile View:</h2>
+        <ol>
+            <li>Press F12 to open DevTools</li>
+            <li>Click the phone/tablet icon (Toggle device toolbar)</li>
+            <li>Or press Ctrl+Shift+M</li>
+            <li>Select "iPhone 12 Pro" or any mobile device</li>
+            <li>You should see the RED box above</li>
+        </ol>
+    </div>
+
+    <div class="test-box">
+        <h2>Your Main Website:</h2>
+        <p><a href="index.html" style="color: #fff; font-size: 1.5rem;">Click here to go to your portfolio</a></p>
+        <p>Then press F12 and toggle mobile view to see responsive design!</p>
+    </div>
+</body>
+
+</html>
